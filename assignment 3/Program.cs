@@ -24,19 +24,23 @@ namespace assignment_3
 
 
 
-                Console.WriteLine("Q1. What do you wanna eat?: ");
-                Console.WriteLine("++++++++++++++++++++++++++++++++");
+                Console.WriteLine("WELCOME TO MARK'S RESTAURANT!! ");
+                Console.WriteLine();
+                Console.WriteLine("This is our Menu:");
+                Console.WriteLine("__________________________________________________________________________");
                 Console.WriteLine("1 - Burger");
                 Console.WriteLine("2 - Pizza");
                 Console.WriteLine("3 - Steak");
                 Console.WriteLine("4 - Fries");
                 Console.WriteLine("5 - Exit");
-                Console.Write("Please make your selection (1 to 5): ");
+                Console.Write("Enter your order here! (1 to 5): ");
                 prompt = Console.ReadLine();
                 Console.Write("\n");
                 foodMenu = Convert.ToInt32(prompt);
+               
 
-                Console.WriteLine("++++++++++++++++++++++++++++++++++");
+                Console.WriteLine("__________________________________________________________________________");
+                Console.WriteLine();
                 switch ((Menu)foodMenu)
                 {
                     case Menu.BURGER:
@@ -52,17 +56,22 @@ namespace assignment_3
                         Console.WriteLine("You are trying to save money");
                         break;
                     case Menu.EXIT:
-                        Console.WriteLine("You dont want anything");
+                        Console.WriteLine("Thank you for choosing our restaurant! please come again!");
                         break;
                     default:
                         Console.WriteLine("ERROR - Invalid Entry!!");
                         break;
+                        
                 }
+                Console.WriteLine("__________________________________________________________________________");
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
+                Console.Clear();
 
             }
 
 
-           Console.WriteLine("++++++++++++++++++++++++++++++++");
+            Console.WriteLine("__________________________________________________________________________");
            Console.WriteLine("Press any key to exit...");
            Console.ReadKey();
 
